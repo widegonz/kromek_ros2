@@ -1,0 +1,17 @@
+build/
+install/
+log/
+vendor/*
+!vendor/README.md
+!vendor/COLCON_IGNORE
+data/
+.backups/
+__pycache__/
+*.pyc
+*.db3
+*.db3-shm
+*.db3-wal
+*.tar.gz
+*.zip
+*.so
+*.ko

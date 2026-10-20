@@ -1,0 +1,16 @@
+[Unit]
+Description=Kromek SIGMA50 ROS 2 Foxy acquisition (independent of RADIANT)
+After=multi-user.target
+
+[Service]
+Type=simple
+User=unitree
+WorkingDirectory=/home/unitree/kromek_ros2
+Environment=HOME=/home/unitree
+ExecStart=/bin/bash /home/unitree/kromek_ros2/scripts/run_service.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target
